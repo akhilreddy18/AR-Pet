@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AUSmhaH/////AAABmaczlp1weU83uCXQpOEYE4lZaCiSsY3VvORhHA1Vd20gWcP7e/uobzJTkK7cXgahftm7lO8WZkBMhPaNoImzFEsOxoqM1XZwbeoWIainnck6NvvqcLa3nbkpmWWBv5FJL27rLhZ++smJTgbt7/OpN8cMJ5+AiktDIHWgcfkWvs4h+uI9jLXYhHD+PK9dCXS3M3oCZ/Ok5lAYq5+gjWIg9PAbASjBkaiDWvkbDHucwJsEgNKtQHk99BEA3Vh+4huaSM/dHDNydUNwnPOYAHiymYb2KNWCiGfWOPplFcQA/tYb0vysUYF1CLefYMJiMECf+Ze1qKK6/zrq+RNErq+LFpr5kGckkaH02EsL7xsKwCEQ
-    ufoLicenseKey: QVhhMW1LVC8vLy8vQUFBQUtEZnM2OTBiTjB1S24zME1lcWdBNEtHUkVTbHg0Qzk0ZW5ZcW5XbGEyRDNtdEpaK3dLRGFqZUpUQUhCczFGRG5QTnEvcWNjZWtmRUxrY3EyTG5hQVRyVjhyaStEOElsTTJGa296MUZxeFo4aTVVVTFpcVA3VjB5dVNKN0Q2dlg2TjBlZ1lNZGw1eTVyRXR6ZVpxeGxQR0FzTWQycS9EK2RzMWJORWFDNjVaNFExMStWMm9sUFc0S1dTQXVhb2NsQ3JnUUF1bHlGZXVPQ25FNk5ONGw0Wjh1ZXcvTjArVWRzd05qRDNSOFo5OUdTSDViRnpsNkI0a1dNNExmY2tkNFRadGloYm9wWVJKRlhpbnpRc3ozcXhZa2ovVFJKWEdVV3JPYjhnQ2dLR21tOXJ5bGFpSDRpUjlMWndGRHJSb0tWNjNIcWF4Nk5MTG14eGNvMUFrTUxQaTNiRlI2RkxNdFl4Qm42Z2xRSFZiT1E=
+    vuforiaLicenseKey: AeDv2BP/////AAABmegF7YCOt0ylqt3rOCCR69Y6gxPShWJivSPhG0ivIs3iBZlj1llcSaEymMcFSJz6KXsqaYe7qtE28jwwSCeppii/JoyL5UHVVtB0XI+VfXaMcz830X47yqkIN6yI+OdpFAdJcBYWwSmyMGU7dui/B71ADNoBYZmWtw3nQhGtseaRgggexV0sPM7IAiEM+SK1TUggO+0RBQAv3M+Zpl1R/Z5mat/iWe3oK4o11bBHh4DLCKYATjkQnn4Bx0oROph26La+6L/zEzRJh53WpO31x8heGaj3Ik4lGYJK/D+baaAZPE7O9z9RPCdYH2eITNTRJV0aisHQWGkBcJaIICdXP6rd1145jdio+qWQenMb6Lsg
+    ufoLicenseKey: QWQxN3M4SC8vLy8vQUFBQUtHakoxMDNodkV5dnJWeGplcXB1REZjY2doc1FTRHBUVGZiUHNzOVVhQlVHeFc0OEEwK0hMQTIwUlh0VTdZb3VOazJqNStuQlpQMVhFM2JXWTd0ZGIvcmxIOW1tRG0vZzdYMnF0ME5Wa3QzN1RmYmFLWUZyayt1eG1lQ1EyVHVuSm8zYTNaaGtjSWJWWnZUVDdBRm8rZFBHanY2OUxiTDFXM21WQzkzM29uZ1JaK2VBK3Q5eWZlSkRoV3JiR0xxZXl3LzVrZ2FqdjVXT2ZwSFNWdnpwRDVNVGowS2hYOTlHSFVrZ0dTVllybzJySlpXajM5MWpRbTNmM0JJZWdRdmZkS3l4dTVJT2JnT2x2Z2k3NWZKQzJsdkxiWno1VDdJcWFTWjRkNnpJVVh5Nm9Ielp4ckNYYWdDa1ZJN1pFemVSWDBZZlBKWFJCZjE1R05sMTBYcFRoQVFsU014YlowV0tkWXIvd0NPYUg4aW0=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -23,7 +23,7 @@ MonoBehaviour:
     useDelayedLoadingObjectTargets: 0
     modelTargetRecoWhileExtendedTracked: 1
     version: 9.4.6
-    eulaAcceptedVersions: '{"Values":["","0.0","9.4","8.3"]}'
+    eulaAcceptedVersions: '{"Values":["9.3","9.4","0.0","8.3"]}'
   database:
     disableModelExtraction: 0
   videoBackground:

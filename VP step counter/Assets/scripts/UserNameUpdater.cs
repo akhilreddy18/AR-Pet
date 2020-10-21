@@ -19,8 +19,8 @@ public class UserNameUpdater : MonoBehaviour
             return;
         }
 
-        SceneData sd = GetComponent<SceneData>();
-        username = sd.un;
+        
+        username = SceneData.un;
         textDisplay.GetComponent<Text>().text = username;
             
     }

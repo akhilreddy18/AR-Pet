@@ -18,6 +18,7 @@ public class InputManager : MonoBehaviour
     {
         username = usernameInput.text;
         Debug.Log("Username is " + username);
+
     }
 
     public void StoreName()
