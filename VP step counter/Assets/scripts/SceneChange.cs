@@ -7,7 +7,7 @@ public class SceneChange : MonoBehaviour
 {
     public void OnScenechange(string SceneName)
     {
-        
+
         Application.LoadLevel(SceneName);
     }
 }

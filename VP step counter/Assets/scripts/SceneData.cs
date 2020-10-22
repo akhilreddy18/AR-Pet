@@ -5,6 +5,7 @@ using UnityEngine;
 public class SceneData : MonoBehaviour
 {
     public static string un;
+    public static float sCompleted;
     static SceneData current;
 
     void Start()
@@ -22,5 +23,6 @@ public class SceneData : MonoBehaviour
     void Update()
     {
         un = InputManager.username;
+        sCompleted = DataUpdater.stepCompleted;
     }
 }

@@ -9,10 +9,13 @@ public class InputManager : MonoBehaviour
 {
     public InputField usernameInput;
     public InputField goalInput;
+    public Slider percentageSlider;
     public static string username;
-    public string Goal;
+    public static int Goal;
+    public static float percentage;
     public GameObject nameDisplay;
     public GameObject goalDisplay;
+    public GameObject valueDisplay;
 
     public void OnSubmit()
     {
@@ -29,8 +32,16 @@ public class InputManager : MonoBehaviour
    
     public void StoreGoal()
     {
-        Goal = goalInput.text;
+        Goal = int.Parse(goalInput.text);
         goalDisplay.GetComponent<Text>().text = "GOAL: " + Goal + " steps";
     }
+
+    public void onValueChange()
+    {
+        percentage = percentageSlider.value;
+        valueDisplay.GetComponent<Text>().text = percentage.ToString("p2") + "cpmpleted.";
+    }
+
+
 
 }

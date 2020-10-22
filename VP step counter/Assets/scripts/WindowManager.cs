@@ -8,7 +8,8 @@ public class WindowManager : MonoBehaviour
     public GameObject GEditWindow;
     public GameObject IWindow;
     public GameObject IWindowMain;
-    
+    public GameObject SCWindow;
+
     public void UNSet()
     {
         UNEditWindow.SetActive(true);
@@ -24,6 +25,10 @@ public class WindowManager : MonoBehaviour
     public void IMOpen()
     {
         IWindowMain.SetActive(true);
+    }
+    public void SCOpen()
+    {
+        SCWindow.SetActive(true);
     }
 
     public void CloseUNSet()
@@ -42,5 +47,9 @@ public class WindowManager : MonoBehaviour
     {
         IWindowMain.SetActive(false);
     }
-   
+    public void CloseSC()
+    {
+        SCWindow.SetActive(false);
+    }
+
 }
