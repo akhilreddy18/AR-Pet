@@ -49,7 +49,7 @@ public class InputManager : MonoBehaviour
     public void onValueChange()
     {
         percentage = percentageSlider.value;
-        valueDisplay.GetComponent<Text>().text = percentage.ToString() + " completed.";
+        valueDisplay.GetComponent<Text>().text = percentage.ToString() + " completed";
     }
 
 
