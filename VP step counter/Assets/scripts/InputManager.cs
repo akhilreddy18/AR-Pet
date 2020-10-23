@@ -17,9 +17,19 @@ public class InputManager : MonoBehaviour
     public GameObject goalDisplay;
     public GameObject valueDisplay;
 
+    private void Start()
+    {
+        String name = PlayerPrefs.GetString("username", "_empty_");
+        if(name != "_empty_")
+        {
+            username = name;
+            usernameInput.text = name;
+        }
+    }
     public void OnSubmit()
     {
         username = usernameInput.text;
+        PlayerPrefs.SetString("username", username);
         Debug.Log("Username is " + username);
 
     }
@@ -39,7 +49,7 @@ public class InputManager : MonoBehaviour
     public void onValueChange()
     {
         percentage = percentageSlider.value;
-        valueDisplay.GetComponent<Text>().text = percentage.ToString("p2") + "cpmpleted.";
+        valueDisplay.GetComponent<Text>().text = percentage.ToString() + " completed.";
     }
 
 
