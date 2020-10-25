@@ -6,8 +6,14 @@ public class SceneData : MonoBehaviour
 {
     public static string un;
     public static float sCompleted;
+    public static float steps;
     static SceneData current;
+    private StepCounter stepCounter;
 
+    private void Awake()
+    {
+        stepCounter = GameObject.FindObjectOfType<StepCounter>();
+    }
     void Start()
     {
         if(current != null)
@@ -24,5 +30,6 @@ public class SceneData : MonoBehaviour
     {
         un = InputManager.username;
         sCompleted = DataUpdater.stepCompleted;
+        steps = float.Parse(stepCounter.stepText.text);
     }
 }
