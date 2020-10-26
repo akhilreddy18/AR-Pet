@@ -11,7 +11,7 @@ public class InputManager : MonoBehaviour
     public InputField goalInput;
     public Slider percentageSlider;
     public static string username;
-    public static int Goal;
+    public static int Goal = 5000;
     public static float percentage;
     public GameObject nameDisplay;
     public GameObject goalDisplay;
@@ -49,7 +49,7 @@ public class InputManager : MonoBehaviour
     public void onValueChange()
     {
         percentage = percentageSlider.value;
-        valueDisplay.GetComponent<Text>().text = percentage.ToString() + " completed";
+        valueDisplay.GetComponent<Text>().text = percentage.ToString("0.#%") + " completed";
     }
 
 
