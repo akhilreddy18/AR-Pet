@@ -21,16 +21,23 @@ public class DataUpdater : MonoBehaviour
     void Start()
     {
         GameObject go = GameObject.Find("UserName");
+        String playerPrefsName = PlayerPrefs.GetString("username", "_empty_");
         if (go == null)
         {
             Debug.LogError("Failed to find an aobject named 'UserName'");
             this.enabled = false;
             return;
         }
-
-
-        username = SceneData.un;
-        textDisplay.GetComponent<Text>().text = username;
+        if (playerPrefsName != "_empty_")
+        {
+            username = playerPrefsName;
+            textDisplay.GetComponent<Text>().text = username;
+        }
+        else
+        {
+            username = SceneData.un;
+            textDisplay.GetComponent<Text>().text = username;
+        }
 
     }
 

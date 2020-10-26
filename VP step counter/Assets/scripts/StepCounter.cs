@@ -49,7 +49,7 @@ using UnityEngine;
                 initialSteps = steps;
             }
         }
-        
+        stepsCount.text = "steps " + initialSteps.ToString();
     }
 
         private void OnStep(int steps, double distance)
@@ -58,7 +58,7 @@ using UnityEngine;
             steps += initialSteps;
             stepText.text = steps.ToString();
             stepsCount.text = "steps " + steps.ToString();
-            distanceText.text = (distance * 3.28084).ToString("F2") + " ft";
+        distanceText.text = (distance * 3.28084).ToString("F2") + " ft";
             PlayerPrefs.SetInt("steps", steps);
         }
 
