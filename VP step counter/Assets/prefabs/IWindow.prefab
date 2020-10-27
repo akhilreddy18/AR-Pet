@@ -77,9 +77,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "It's not only a walking app, but you can also walk your virtual pet! \n\nThis
-    step counter uses the built-in sensor to count your steps. No GPS tracking, so
-    it barely consumes battery power.\n\n"
+  m_Text: 
 --- !u!1 &8364352363217981587
 GameObject:
   m_ObjectHideFlags: 0
