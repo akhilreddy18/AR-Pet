@@ -17,25 +17,21 @@ public class MainPage : MonoBehaviour
         pedometer = new Pedometer(OnStep);
     }
 
-    // Update is called once per frame
+    
     
     private void OnStep(int steps, double distance)
         {
         // Display the values // Distance in feet
             steps += initialMainSteps;
             stepsDisplay.text = "Steps: " + steps.ToString();
-        PlayerPrefs.SetInt("steps", steps);
-
-
+            PlayerPrefs.SetInt("steps", steps);
     }
 
-    
+    private void OnDisable()
+    {
+        // Release the pedometer
+        pedometer.Dispose();
+        pedometer = null;
+    }
 
-        private void OnDisable()
-        {
-            // Release the pedometer
-            pedometer.Dispose();
-            pedometer = null;
-        }
-  
 }

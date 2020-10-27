@@ -24,7 +24,7 @@ public class DataUpdater : MonoBehaviour
         String playerPrefsName = PlayerPrefs.GetString("username", "_empty_");
         if (go == null)
         {
-            Debug.LogError("Failed to find an aobject named 'UserName'");
+            Debug.LogError("Failed to find an an object named 'UserName'");
             this.enabled = false;
             return;
         }
