@@ -20,10 +20,16 @@ public class InputManager : MonoBehaviour
     private void Start()
     {
         String name = PlayerPrefs.GetString("username", "_empty_");
-        if(name != "_empty_")
+        int goal = PlayerPrefs.GetInt("goal", -100);
+        if (name != "_empty_")
         {
             username = name;
             usernameInput.text = name;
+        }
+        if (goal != -100)
+        {
+            Goal = goal;
+            goalDisplay.GetComponent<Text>().text = "GOAL: " + Goal + " steps";
         }
     }
     public void OnSubmit()
@@ -44,6 +50,7 @@ public class InputManager : MonoBehaviour
     {
         Goal = int.Parse(goalInput.text);
         goalDisplay.GetComponent<Text>().text = "GOAL: " + Goal + " steps";
+        PlayerPrefs.SetInt("goal", Goal);
     }
 
     public void onValueChange()

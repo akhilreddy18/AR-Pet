@@ -22,6 +22,7 @@ public class DataUpdater : MonoBehaviour
     {
         GameObject go = GameObject.Find("UserName");
         String playerPrefsName = PlayerPrefs.GetString("username", "_empty_");
+        int steps = PlayerPrefs.GetInt("steps", -100);
         if (go == null)
         {
             Debug.LogError("Failed to find an an object named 'UserName'");
@@ -37,6 +38,11 @@ public class DataUpdater : MonoBehaviour
         {
             username = SceneData.un;
             textDisplay.GetComponent<Text>().text = username;
+        }
+        if(steps != -100)
+        {
+            Percent.value = (float)steps / (float)InputManager.Goal;
+            stepCompleted = Percent.value;
         }
 
     }

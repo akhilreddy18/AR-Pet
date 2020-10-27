@@ -14,6 +14,7 @@ public class MainPage : MonoBehaviour
     private void Start()
     {
         initialMainSteps = PlayerPrefs.GetInt("steps", 0);
+        stepsDisplay.text = "Steps: " + initialMainSteps.ToString();
         pedometer = new Pedometer(OnStep);
     }
 
