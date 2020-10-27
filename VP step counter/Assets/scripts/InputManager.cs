@@ -44,6 +44,7 @@ public class InputManager : MonoBehaviour
     {
         username = usernameInput.text;
         nameDisplay.GetComponent<Text>().text = username;
+        PlayerPrefs.SetString("username", username);
     }
    
     public void StoreGoal()

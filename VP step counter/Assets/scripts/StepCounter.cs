@@ -50,6 +50,7 @@ using UnityEngine;
             }
         }
         stepsCount.text = "steps " + initialSteps.ToString();
+        stepText.text = initialSteps.ToString();
     }
 
         private void OnStep(int steps, double distance)

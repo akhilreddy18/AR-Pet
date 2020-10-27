@@ -12,24 +12,24 @@ public class SceneData : MonoBehaviour
 
     private void Awake()
     {
-        stepCounter = GameObject.FindObjectOfType<StepCounter>();
+        //stepCounter = GameObject.FindObjectOfType<StepCounter>();
     }
     void Start()
     {
-        if(current != null)
-        {
-            Destroy(this.gameObject);
-            return;
-        }
-        current = this;
-        GameObject.DontDestroyOnLoad(this.gameObject);
+        //if(current != null)
+        //{
+        //    Destroy(this.gameObject);
+        //    return;
+        //}
+        //current = this;
+        //GameObject.DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-        un = InputManager.username;
-        sCompleted = DataUpdater.stepCompleted;
-        steps = float.Parse(stepCounter.stepText.text);
+        //un = InputManager.username;
+        //sCompleted = DataUpdater.stepCompleted;
+        //steps = float.Parse(stepCounter.stepText.text);
     }
 }

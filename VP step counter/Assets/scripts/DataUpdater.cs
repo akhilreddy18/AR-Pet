@@ -12,6 +12,7 @@ public class DataUpdater : MonoBehaviour
     public static float stepCompleted;
     public Slider Percent;
     private StepCounter stepCounter;
+    int steps;
 
     private void Awake()
     {
@@ -23,6 +24,8 @@ public class DataUpdater : MonoBehaviour
         GameObject go = GameObject.Find("UserName");
         String playerPrefsName = PlayerPrefs.GetString("username", "_empty_");
         int steps = PlayerPrefs.GetInt("steps", -100);
+        Debug.Log("*********steps************");
+        Debug.Log(steps);
         if (go == null)
         {
             Debug.LogError("Failed to find an an object named 'UserName'");
@@ -42,6 +45,7 @@ public class DataUpdater : MonoBehaviour
         if(steps != -100)
         {
             Percent.value = (float)steps / (float)InputManager.Goal;
+            Debug.Log(Percent.value);
             stepCompleted = Percent.value;
         }
 
