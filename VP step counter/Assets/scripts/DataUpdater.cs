@@ -45,6 +45,7 @@ public class DataUpdater : MonoBehaviour
     {
         Percent.minValue = 0;
         Percent.maxValue = 1;
+        
         PercentValueUpdate();
         
     }
